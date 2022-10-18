@@ -4,7 +4,7 @@ After finding out that <b>Random Forest and XGBoost</b> performs the best, now i
 
 # Deploying the model using AWS
 For deploying I chose the XGBoost model. An xgboost deployment pipeline is better because retraining XGBoost is faster than random forest.
-First I created a S3 bucket to store the training data. Then I retrained the model using the same process and parameters, while building the model locally.
+First I created a S3 bucket to store the training data. Then I retrained the model using the same process and parameters that I used while building the model locally. Then I load and reformat the CSV data before deploying the trained model to an endpoint, finally running the model to make predictions.
 ### References
 1) Dataset: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset <br>
 2) AWS documentations: <br>
