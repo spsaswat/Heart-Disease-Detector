@@ -3,6 +3,9 @@ Using Data visualization/analysis, and machine learning models to build a model 
 After finding out that <b>Random Forest and XGBoost</b> performs the best, now it is time to deploy the model.
 
 # Deploying the model using AWS
+![image](https://user-images.githubusercontent.com/45821961/200264684-a3845d4d-82ea-45f0-b34c-33e441ecd859.png)
+
+
 For deploying I chose the XGBoost model. An xgboost deployment pipeline is better because retraining XGBoost is faster than random forest.
 First I created a S3 bucket to store the training data. Then I retrained the model using the same process and parameters that I used while building the model locally. Then I load and reformat the CSV data before deploying the trained model to an endpoint, finally running the model to make predictions.
 ### References
